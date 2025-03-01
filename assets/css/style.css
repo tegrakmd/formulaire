@@ -26,7 +26,7 @@ form h1 {
   font-size: 8vw;
 }
 .header_form.insc h1 {
-  font-size: 7vw;
+  font-size: 8vw;
 }
 
 form span {
@@ -211,6 +211,9 @@ button:hover {
     height: 100dvh;
   }
   form h1 {
+    font-size: 18vw;
+  }
+  .header_form.insc h1 {
     font-size: 18vw;
   }
   button {
