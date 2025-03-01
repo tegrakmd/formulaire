@@ -1,0 +1,280 @@
+html {
+  background: white;
+}
+body {
+  width: 100%;
+  /* height: 100dvh; */
+  font-family: Inter;
+}
+p,
+span {
+  font-family: Inter;
+}
+form {
+  flex: 1;
+  padding: 5rem;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+}
+form h1 {
+  font-size: 8vw;
+}
+.header_form.insc h1 {
+  font-size: 7vw;
+}
+
+form span {
+  color: #929292;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+.formulaire {
+  display: flex;
+}
+
+.cover_form {
+  flex: 1;
+  position: relative;
+  height: 100dvh;
+  background: url(../images/2025_02_26_23_43_IMG_7349.JPG) no-repeat center
+    center / cover;
+  padding: 4rem;
+}
+.cover_form.insc {
+  flex: 1;
+  position: relative;
+  height: 100dvh;
+  background: url(../images/2025_02_26_23_43_IMG_7350.JPG) no-repeat center
+    center / cover;
+  padding: 4rem;
+}
+.header_form {
+  text-align: center;
+}
+.label_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  gap: 15px;
+}
+.label_form.insc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  gap: 15px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 4rem;
+}
+.label_form.insc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.input_lab label {
+  font-size: 28px;
+  letter-spacing: -2px;
+  font-weight: 500;
+}
+.input_lab {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  color: #000;
+  background: #fff;
+  font-size: 15px;
+  height: 20px;
+  font-size: 20px;
+  border: 1px solid #e0e0e0;
+  /* box-shadow: 0 32px 88px rgba(0, 0, 0, 0.24); */
+}
+.btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4rem;
+  max-width: 700px;
+}
+.btns button {
+  width: 100%;
+}
+
+input {
+  outline: none;
+  color: #000;
+  background: transparent;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: none;
+}
+.logo1 {
+  position: absolute;
+  top: 50px;
+  font-weight: 600;
+  mix-blend-mode: difference;
+  color: #000;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10rem;
+  font-family: Neopixel;
+  display: none;
+  letter-spacing: -4px;
+}
+.logo {
+  position: absolute;
+  top: 70%;
+  font-weight: 600;
+  color: #fff;
+  mix-blend-mode: difference;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20rem;
+  font-family: Neopixel;
+  z-index: 2;
+  letter-spacing: -4px;
+}
+
+button {
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  background: #000;
+  font-family: Poppins;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  transition: 1s ease-in-out;
+  font-weight: 400;
+}
+button:hover {
+  background: #1b1b1b;
+}
+.remenber {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.remenber p {
+  font-size: 18px;
+  color: #575757;
+}
+.remenber p a {
+  font-size: 18px;
+  color: #000;
+}
+.checkbox_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+}
+.checkbox label {
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+@media (max-width: 980px) {
+  html {
+    font-size: calc(100vw / 980 * 10);
+  }
+  .cover_form {
+    display: none;
+  }
+  form {
+    height: 100dvh;
+  }
+  form h1 {
+    font-size: 18vw;
+  }
+  button {
+    padding: 8px 15px;
+  }
+  button {
+    font-size: 18px;
+  }
+  form span {
+    font-size: 18px;
+  }
+
+  .remenber p,
+  .remenber p a {
+    font-size: 18px;
+  }
+  .input_lab label {
+    letter-spacing: -2px;
+    font-size: 18px;
+  }
+  .logo1 {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: calc(100vw / 768 * 10);
+  }
+  input {
+    font-size: 15px;
+  }
+  .label_form.insc {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    padding: 3rem;
+  }
+  .remenber.insc {
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    position: unset;
+    bottom: unset;
+    left: unset;
+    transform: unset;
+  }
+}
+@media (max-width: 600px) {
+  form.insc {
+    height: 100%;
+  }
+  .input {
+    padding: 10px;
+  }
+  button {
+    font-size: 14px;
+  }
+  input {
+    font-size: 12px;
+  }
+}
