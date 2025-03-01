@@ -270,6 +270,7 @@ button:hover {
 @media (max-width: 600px) {
   form.insc {
     height: 100%;
+    padding-bottom: 8rem;
   }
   .input {
     padding: 10px;
